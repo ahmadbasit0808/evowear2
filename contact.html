@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - EvoWear</title>
+    <style>
+      .contact-container {
+        width: 100%;
+        max-width: 900px;
+      }
+      .contact-form,
+      .contact-details {
+        width: 100%;
+      }
+
+      @media (max-width: 767px) {
+        .contact-container {
+          padding: 0 15px;
+        }
+        .contact-form,
+        .contact-details {
+          padding: 20px;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- linking bootstrap and font awesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- start -->
+    <!-- header -->
+    <header>
+      <div class="header">
+        <img
+          onclick="window.location.href='index.html'"
+          src="favicon\android-chrome-192x192.png"
+        />
+        <input id="navinput" type="text" placeholder="Search here . . ." />
+        <button id="navbtn" class="btn" onclick="remove()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <i id="cart" class="fa-solid fa-cart-shopping"></i>
+        <a href="review.html" id="link" onclick="window.location.reload()"
+          >Reviews</a
+        >
+        <a href="contact.html" id="link" onclick="window.location.reload()"
+          >Contact
+        </a>
+      </div>
+    </header>
+
+    <!-- Contact Section -->
+    <div
+      class="container-fluid d-flex align-items-center justify-content-center mt-4"
+    >
+      <div class="contact-container w-100 w-md-50">
+        <!-- Contact Form -->
+        <form
+          class="contact-form p-5"
+          style="
+            box-shadow: 0 0 3px black;
+            border-radius: 5px;
+            background-color: #eeeeee;
+          "
+          action="submit_form.php"
+          method="post"
+        >
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              name="name"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write your message here"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+
+        <!-- Contact Details -->
+        <div
+          class="d-flex align-items-center justify-content-around contact-details mt-5 mb-5 p-5"
+          style="
+            box-shadow: 0 0 3px black;
+            border-radius: 5px;
+            background-color: #eeeeee;
+          "
+        >
+          <div class="">
+            <h3>Our Contact Details</h3>
+            <p><strong>Email:</strong> support@evowear.com</p>
+            <p><strong>Phone:</strong> +92-123-456-7890</p>
+            <p>
+              <strong>Address:</strong> EvoWear HQ, Punjab University,
+              Gujranwala, Pakistan
+            </p>
+          </div>
+          <iframe
+            style="box-shadow: 0 0 3px black; border-radius: 8px"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3432.170404091186!2d74.1536523!3d32.1897504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzLCsDExJzIzLjEiTiA3NMKwMDknMTMuMSJF!5e0!3m2!1sen!2s!4v1672258425078!5m2!1sen!2s"
+            allowfullscreen=""
+            allowfullscreen=""
+            loading="lazy"
+          >
+          </iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer  -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="#" class="social-icon">Facebook</a>
+          <a href="#" class="social-icon">Instagram</a>
+          <a href="#" class="social-icon">Twitter</a>
+          <a href="#" class="social-icon">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 EvoWear - All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- end -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>
