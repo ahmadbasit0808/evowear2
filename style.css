@@ -254,12 +254,15 @@ footer p {
   }
   #cart {
     visibility: collapse;
+    display:none;
   }
   .header input {
     visibility: collapse;
+    display:none;
   }
   .header button {
     visibility: collapse;
+    display:none;
   }
   #link {
     margin: 5px 10px;
