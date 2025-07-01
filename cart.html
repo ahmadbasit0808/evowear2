@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - EvoWear</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- linking bootstrap and font awesome -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- start -->
+    <!-- header -->
+    <header>
+      <div class="header">
+        <img
+          onclick="window.location.href='index.html'"
+          src="favicon\android-chrome-192x192.png"
+        />
+        <input id="navinput" type="text" placeholder="Search here . . ." />
+        <button id="navbtn" class="btn" onclick="remove()">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <i
+          id="cart"
+          class="fa-solid fa-cart-shopping"
+          onclick="window.location.reload()"
+        ></i>
+        <a href="review.html" id="link">Reviews</a>
+        <a href="contact.html" id="link">Contact </a>
+        <a href="about.html" id="link">About Us</a>
+      </div>
+    </header>
+    <!-- body -->
+    <div class="container mt-5 mb-4">
+      <h2 class="text-center mb-4">Items in Cart</h2>
+      <!-- Cart Items List -->
+      <div id="cart-items">
+        <!-- item number 1 -->
+        <div class="row mb-3 cart-item d-flex align-items-center">
+          <div class="col-8 d-flex align-items-center">
+            <input type="checkbox" class="cart-item-checkbox" />
+            <div class="card w-75 ms-3">
+              <div class="card-body d-flex align-items-center">
+                <div class="card-text me-3">
+                  <h5 class="card-title">T-Shirt</h5>
+                  <p>
+                    This is a Textured Striped T-Shirt. It has 2 Colors and
+                    comes in Regular Fit.
+                  </p>
+                  <p class="text-danger">PKR 4,490</p>
+                </div>
+                <img
+                  src="Products\person1.webp"
+                  class="card-img-top"
+                  alt="Item Image"
+                  style="max-height: 100px; object-fit: cover; width: auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-danger delete-btn">Delete</button>
+          </div>
+        </div>
+        <!-- item number 2 -->
+        <div class="row mb-3 cart-item d-flex align-items-center">
+          <div class="col-8 d-flex align-items-center">
+            <input type="checkbox" class="cart-item-checkbox" />
+            <div class="card w-75 ms-3">
+              <div class="card-body d-flex align-items-center">
+                <div class="card-text me-3">
+                  <h5 class="card-title">Sweatshirt</h5>
+                  <p>
+                    This is a Basic Fleece Sweatshirt. It has 3 Colors and comes
+                    in Relaxed Fit.
+                  </p>
+                  <p class="text-danger">PKR 3,690</p>
+                </div>
+                <img
+                  src="Products\person2.webp"
+                  class="card-img-top"
+                  alt="Item Image"
+                  style="max-height: 100px; object-fit: cover; width: auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-danger delete-btn">Delete</button>
+          </div>
+        </div>
+        <!-- item number 3 -->
+        <div class="row mb-3 cart-item d-flex align-items-center">
+          <div class="col-8 d-flex align-items-center">
+            <input type="checkbox" class="cart-item-checkbox" />
+            <div class="card w-75 ms-3">
+              <div class="card-body d-flex align-items-center">
+                <div class="card-text me-3">
+                  <h5 class="card-title">T-shirt</h5>
+                  <p>
+                    This is a Turtle Neck T-shirt. It has 2 Colors and comes in
+                    Regular Fit.
+                  </p>
+                  <p class="text-danger">PKR 2,090</p>
+                </div>
+                <img
+                  src="Products\person3.webp"
+                  class="card-img-top"
+                  alt="Item Image"
+                  style="max-height: 100px; object-fit: cover; width: auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-danger delete-btn">Delete</button>
+          </div>
+        </div>
+        <!-- item number 4 -->
+        <div class="row mb-3 cart-item d-flex align-items-center">
+          <div class="col-8 d-flex align-items-center">
+            <input type="checkbox" class="cart-item-checkbox" />
+            <div class="card w-75 ms-3">
+              <div class="card-body d-flex align-items-center">
+                <div class="card-text me-3">
+                  <h5 class="card-title">Sweatshirt</h5>
+                  <p>
+                    This is a Mock Neck Fleece Sweatshirt. It has 3 Colors and
+                    comes in Regular Fit.
+                  </p>
+                  <p class="text-danger">PKR 3,990</p>
+                </div>
+                <img
+                  src="Products\person4.webp"
+                  class="card-img-top"
+                  alt="Item Image"
+                  style="max-height: 100px; object-fit: cover; width: auto"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <button class="btn btn-danger delete-btn">Delete</button>
+          </div>
+        </div>
+      </div>
+      <button class="btn btn-danger mt-3 mb-3" id="delete-selected-btn">
+        Delete Selected Items
+      </button>
+    </div>
+
+    <!-- footer  -->
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="social-icons">
+          <a href="#" class="social-icon">Facebook</a>
+          <a href="#" class="social-icon">Instagram</a>
+          <a href="#" class="social-icon">Twitter</a>
+          <a href="#" class="social-icon">LinkedIn</a>
+        </div>
+        <p>&copy; 2024 EvoWear - All Rights Reserved</p>
+      </div>
+    </footer>
+    <!-- end -->
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</html>

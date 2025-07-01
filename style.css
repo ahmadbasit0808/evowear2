@@ -239,7 +239,7 @@ footer p {
 
 /* media queries for responsive design */
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .header {
     height: auto;
     flex-direction: column;
@@ -254,15 +254,12 @@ footer p {
   }
   #cart {
     visibility: collapse;
-    display:none;
   }
   .header input {
     visibility: collapse;
-    display:none;
   }
   .header button {
     visibility: collapse;
-    display:none;
   }
   #link {
     margin: 5px 10px;
